@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#F7F8FA">
+  <title>UPHF · Pengurusan Harta &amp; Fasiliti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17" defer></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Langkau ke kandungan</a>
+  <aside class="sidebar">
+    <a class="brand" href="#dashboard"><span class="logo"><i data-lucide="building-2"></i></span><span>UPHF<small>INSPEN</small></span></a>
+    <nav id="desktop-nav" aria-label="Navigasi utama"></nav>
+    <div class="sidebar-foot"><span class="logo small"><i data-lucide="shield-check"></i></span><div>Portal pengurusan<small>Harta &amp; Fasiliti</small></div></div>
+  </aside>
+  <main id="main" class="main">
+    <header class="topbar flex items-center justify-between">
+      <a class="brand mobile-brand" href="#dashboard"><span class="logo"><i data-lucide="building-2"></i></span><span>UPHF<small>INSPEN</small></span></a>
+      <span class="context">Unit Pengurusan Harta dan Fasiliti</span>
+      <div class="top-actions"><span id="connection" class="connection"></span><button id="refresh" class="icon-btn" aria-label="Segar semula" title="Segar semula"><i data-lucide="refresh-cw"></i></button></div>
+    </header>
+    <p id="notice" class="notice" role="status" hidden></p>
+    <section id="view" aria-label="Kandungan dashboard"></section>
+  </main>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Navigasi mudah alih"></nav>
+  <button id="quick" class="quick" aria-label="Buka agihan kerja" title="Buka agihan kerja"><i data-lucide="clipboard-plus"></i></button>
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <div id="dialog-body"></div>
+  </dialog>
+</body>
+</html>
